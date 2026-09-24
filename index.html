@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="icon" href="images/cat.jpg">
   <title>Riki Needs A Job</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
@@ -157,6 +158,34 @@
     .dot.active {
       background-color: #D9480F;
     }
+    .roofing-slide {
+  position: relative;
+  overflow: visible;
+}
+
+.side-photo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 280px;
+  margin: 0;
+  pointer-events: none;
+}
+
+.side-left {
+  left: -180px;
+}
+
+.side-right {
+  right: -180px;
+  transform: translateY(-50%) rotateY(180deg);
+}
+
+@media (max-width: 900px) {
+  .side-photo {
+    display: none;
+  }
+}
 
     @media (max-width: 480px) {
       .slide {
@@ -198,15 +227,44 @@
     I am currently studying Engineering at VUW but am looking to transition back into a full-time working position as studying is not a good fit for me right now. I am 25 years old and graduated high school in 2019 and worked in the trade until 2025. I am a qualified roofer and am looking to either get back into the trade or commit to a new challenge.</p>
   </div>
 
-  <div class="slide">
-    <h1>My roofing experience</h1>
-    <p>Four years' experience as a roofer, including leading a team of three across re-roofs and new builds. Experienced with metal roofing, PVC and metal spouting, and membrane roofing systems, both working solo and as part of a team.</p>
-    <div class="gallery">
-      <img src="images/roof1.jpg">
-      <img src="images/roof2.jpg">
-      <img src="images/roof3.jpg">
-    </div>
+ <div class="slide roofing-slide">
+  <img src="images/display.png" class="side-photo side-left">
+  <img src="images/display.png" class="side-photo side-right">
+  <h1>My roofing experience</h1>
+  <p>Four years' experience as a roofer, including leading a team of three across re-roofs and new builds. I gained my qualification as a roofer and have extensive experience with various roofing materials and techniques, including metal roofing, PVC and metal spouting, and membrane roofing systems, both working solo and as part of a team.</p>
+  <div class="gallery">
+    <img src="images/roof1.jpg">
+    <img src="images/roof2.jpg">
+    <img src="images/roof3.jpg">
   </div>
+</div>
+<div class="slide">
+  <h1>Outside of Work</h1>
+  <div class="quali-list">
+    <div class="quali-card hobby-card">
+      <img src="images/pcbuild.jpg" class="hobby-thumb">
+      <div>
+        <strong>Building PCs</strong>
+        <span>I have custom built 3 PC's and broken and troubleshooted various hardware/software issues more times than i can count.</span>
+      </div>
+    </div>
+    <div class="quali-card hobby-card">
+      <img src="images/gamer.jpg" class="hobby-thumb">
+      <div>
+        <strong>Gaming</strong>
+        <span>I love to play videogames in my spare time! Unfortunately I am no professional hence why I am loking for a job. </span>
+      </div>
+    </div>
+    <div class="quali-card hobby-card">
+      <img src="images/fishing.png" class="hobby-thumb">
+      <div>
+        <strong>Fishing</strong>
+        <span>I like to think I am somewhat of a good angler and I love to fish in summer. You will find me out on the wellington harbour trying my luck. Unfortunately my track record proves undersized fish and watching my $15 rig fly off my line on a monster cast. </span>
+      </div>
+    </div>
+   
+  </div>
+</div>
 
   <div class="slide">
     <h1>Education & Qualifications</h1>
@@ -227,20 +285,28 @@
   </div>
 
   <div class="slide">
-    <h1>Skills & Qualities</h1>
-    <div class="quali-list">
-      <div class="quali-card">
-        <strong>Team Player</strong>
-        <span>Proven team leader while roofing</span>
+  <h1>Skills & Qualities</h1>
+ <div class="quali-list">
+  <div class="quali-card hobby-card">
+    <img src="images/wahs.png" class="hobby-thumb">
+    <div>
+      <strong>Team Player</strong>
+      <span>I value myself as a team player as I was apart of and ran roofing teams.</span>
+    </div>
+  </div>
+  <div class="quali-card hobby-card">
+    <img src="images/actionshot.jpg" class="hobby-thumb" style="width: 200px; height: 400px;">
+    <div>
+      <strong>Hardworking</strong>
+      <span>Physically fit and willing to learn</span>
+    </div>
+  </div>
+  <div class="quali-card hobby-card">
+    <div>
+      <strong>Positive Attitude</strong>
+      <span>Strong interpersonal skills aswell as always bringing a postive attitude to any situation.></span>
       </div>
-      <div class="quali-card">
-        <strong>Hardworking</strong>
-        <span>Physically fit and willing to learn</span>
-      </div>
-      <div class="quali-card">
-        <strong>Positive Attitude</strong>
-        <span>Strong interpersonal skills</span>
-      </div>
+     </div>
     </div>
   </div>
 
@@ -258,6 +324,7 @@
     <button class="nav-btn" onclick="prevSlide()">&#8592;</button>
     <div class="dots">
       <span class="dot active"></span>
+      <span class="dot"></span>
       <span class="dot"></span>
       <span class="dot"></span>
       <span class="dot"></span>
